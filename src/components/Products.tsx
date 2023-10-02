@@ -1,4 +1,3 @@
-import { log } from 'console'
 import React from 'react'
 import { ProductProps } from '../../types'
 import Image from "next/image";
