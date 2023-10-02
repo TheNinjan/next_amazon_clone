@@ -21,7 +21,7 @@ export const nextSlice =createSlice({
     initialState,
     reducers:{
         addToCart:(state,action)=>{
-            const existingProduct =state.productData.find((item:StoreProduct)=>item._id===action.payload);
+            const existingProduct =state.productData.find((item:StoreProduct)=>item._id===action.payload._id);
             if(existingProduct){
                 existingProduct.quantity++
             }
